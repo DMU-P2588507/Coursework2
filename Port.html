@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfolio</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <center><h1>Joseph Lovell</h1>
+  <nav id="menu">
+    <label for="navi">&#9776;</label>
+    <input type="checkbox" id="navi"/>
+    <div id="menuitems">
+      <a href="Coursework.html">Home</a>
+      <a href="About.html">About Me</a>
+      <a href="Port.html">Portfolio</a>
+    </div>
+  </nav>
+  <center><h2>Portfolio</h2>
+  <h3>People</h3>
+<div  class="slideshow">
+  <div class="slides">
+    <img src="images/fire1.JPG" style="max-width:75%">
+  </div>
+<div class="slides">
+    <img src="images/fire2.JPG" style="max-width:75%">
+  </div>
+<div class="slides">
+    <img src="images/Glass.jpg" style="max-width:75%">
+  </div>
+<div class="slides">
+      <img src="images/light.JPG" style="max-width:75%">
+    </div>
+<div class="slides">
+    <img src="images/protest.JPG" style="max-width:75%">
+      </div>
+      <div class="slides">
+          <img src="images/spark.JPG" style="max-width:75%">
+        </div>
+        <div class="slides">
+            <img src="images/tunn.JPG" style="max-width:30%">
+          </div>
+  <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+</div>
+<br>
+
+<h3>Animals</h3>
+<div class="slideshow">
+  <div class="slides1">
+    <img src="images/bird.JPG" style="max-width:75%">
+  </div>
+<div class="slides1">
+    <img src="images/lion.JPG" style="max-width:75%">
+  </div>
+<div class="slides1">
+    <img src="images/meer.jpg" style="max-width:75%">
+  </div>
+<div class="slides1">
+      <img src="images/rhino.JPG" style="max-width:75%">
+    </div>
+<a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1,1)">&#10095;</a>
+</div>
+
+<h3>Landscape</h3>
+<div class="landscape">
+  <img src="images/hill.JPG" style="max-width:75%">
+  </div>
+<div class="slides2">
+    <img src="images/sun1.JPG" style="max-width:75%">
+  </div>
+<div class="slides2">
+    <img src="images/sun2.jpg" style="max-width:75%">
+  </div>
+
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["slides","slides1"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+
+  x[slideIndex[no]-1].style.display = "block";
+}
+  </script>
+<div class="vid">
+
+  <h3> Previous Video Work</h3>
+  <video controls width=75%>
+    <source src="video/Joseph Music Video Milk.mp4" type="video/mp4" />
+    <p> Sorry, your browser does not support this video element. You can download this video <a href="videp/video/Joseph Music Video Milk.mp4">here</a></p> <!--This provides a fallback for users in case they are unable to view the video due to the browser they are using not supporting the file format. The href allows people to click the word here to download the file. -->
+</div>
+<footer>
+<center>
+    <p>Joseph Lovell
+    </p>
+    <center><p>
+      P2588507
+    </p>
+    </footer>
+    </html>
