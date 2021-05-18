@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Portfolio</title>
-<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" /> <!-- Same style sheet is used throughout the entire website-->
 </head>
 <body>
   <center><h1>Joseph Lovell</h1>
@@ -20,28 +20,28 @@
   <center><h2>Portfolio</h2>
   <h3>People</h3>
 <div  class="slideshow">
-  <div class="slides">
-    <img src="images/fire1.JPG" style="max-width:75%">
+  <div class="slides"> <!-- The class had to be distinguished for each slideshow as CSS and Java must be used to create a slideshow due to the animation and styling. -->
+    <img src="images/fire1.JPG" alt="Fire Eater" style="max-width:75%"> <!-- Images were changed from the original code to be slightly smaller to show the arrows in which the user presses clearer, as the website is aimed to be for mobile use. If the arrows were not to be seen, the acessibility for the site would not be of a good standard. -->
   </div>
 <div class="slides">
-    <img src="images/fire2.JPG" style="max-width:75%">
+    <img src="images/fire2.JPG" alt="Fire Spinner" style="max-width:75%"> <!-- File format such as .JPG must be stated in order for image to be seen. -->
   </div>
 <div class="slides">
-    <img src="images/Glass.jpg" style="max-width:75%">
+    <img src="images/Glass.jpg" alt="Glass Ball Photography" style="max-width:75%">
   </div>
 <div class="slides">
-      <img src="images/light.JPG" style="max-width:75%">
+      <img src="images/light.JPG" alt="Using Lights and a Prism" style="max-width:75%">
     </div>
 <div class="slides">
-    <img src="images/protest.JPG" style="max-width:75%">
+    <img src="images/protest.JPG" alt="London Protestor" style="max-width:75%">
       </div>
       <div class="slides">
-          <img src="images/spark.JPG" style="max-width:75%">
+          <img src="images/spark.JPG" alt="Sparklers" style="max-width:75%">
         </div>
         <div class="slides">
             <img src="images/tunn.JPG" style="max-width:30%">
           </div>
-  <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+  <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a> <!-- These function are used when the arrows are clicked on in the slidshow, and the n passes through the inline code-->
   <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
 </div>
 <br>
@@ -49,16 +49,16 @@
 <h3>Animals</h3>
 <div class="slideshow">
   <div class="slides1">
-    <img src="images/bird.JPG" style="max-width:75%">
+    <img src="images/bird.JPG" alt="Exotic Bird" style="max-width:75%">
   </div>
 <div class="slides1">
-    <img src="images/lion.JPG" style="max-width:75%">
+    <img src="images/lion.JPG" alt="Pack of Female Lions" style="max-width:75%">
   </div>
 <div class="slides1">
-    <img src="images/meer.jpg" style="max-width:75%">
+    <img src="images/meer.jpg" alt="Meerkat Sat On Tree Trunk" style="max-width:75%">
   </div>
 <div class="slides1">
-      <img src="images/rhino.JPG" style="max-width:75%">
+      <img src="images/rhino.JPG" alt="Rhino" style="max-width:75%">
     </div>
 <a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1,1)">&#10095;</a>
@@ -66,27 +66,27 @@
 
 <h3>Landscape</h3>
 <div class="landscape">
-  <img src="images/hill.JPG" style="max-width:75%">
+  <img src="images/hill.JPG" alt="Hut on the Hill" style="max-width:75%">
   </div>
 <div class="slides2">
-    <img src="images/sun1.JPG" style="max-width:75%">
+    <img src="images/sun1.JPG" alt="Egyptian Desert" style="max-width:75%">
   </div>
 <div class="slides2">
-    <img src="images/sun2.jpg" style="max-width:75%">
+    <img src="images/sun2.JPG" alt="Egyptian Desert" style="max-width:75%">
   </div>
 
 
 <script>
 var slideIndex = [1,1];
-var slideId = ["slides","slides1"]
-showSlides(1, 0);
+var slideId = ["slides","slides1"] /*var is the use of a variable in Java, meaning both the two div which are going to be a slide show act as a storage place for the images and contain data */
+showSlides(1, 0); /* https://www.w3schools.com/howto/howto_js_slideshow.asp is where the basis for this type of slideshow is from, however it had to be changed in order to contain the correct images and the divs in order to make it easier to follow for this piece of code*/
 showSlides(1, 1);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
 }
 
-function showSlides(n, no) {
+function showSlides(n, no) {  /*Rather than having the code for two different slideshows, this code worked better as prior to this when trying to create two seperate ones, the two were crossing, and the incorrect slideshows were linked to the incoorect arrows*/
   var i;
   var x = document.getElementsByClassName(slideId[no]);
   if (n > x.length) {slideIndex[no] = 1}
@@ -97,14 +97,14 @@ function showSlides(n, no) {
 
   x[slideIndex[no]-1].style.display = "block";
 }
-  </script>
+  </script> <!-- Script is the text used for Java-->
 <div class="vid">
 
   <h3> Previous Video Work</h3>
   <video controls width=75%>
-    <source src="video/Joseph Music Video Milk.mp4" type="video/mp4" />
+    <source src="video/Joseph Music Video Milk.mp4" type="video/mp4" /><!-- The video path is followed back the video folder anf the type of video it is, is stated as videos require this -->
     <p> Sorry, your browser does not support this video element. You can download this video <a href="videp/video/Joseph Music Video Milk.mp4">here</a></p> <!--This provides a fallback for users in case they are unable to view the video due to the browser they are using not supporting the file format. The href allows people to click the word here to download the file. -->
-</div>
+</div> <!-- A fall back is given, as all browers may not allow this video to be played meaning it may have to be downloaded instead. -->
 <footer>
 <center>
     <p>Joseph Lovell

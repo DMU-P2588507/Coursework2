@@ -2,41 +2,41 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Home Page</title>
-<link href="css/style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- This meta tag ensures that the website scales correctly when the size of the screen it is on changes -->
+<title>Home Page</title> <!-- This is what will be seen on the tab of the website-->
+<link href="css/style.css" rel="stylesheet" type="text/css" /> <!-- By using this code, this page will follow style rules pre set in a seperate CSS file, this ensures that all pages follow the same code, and makes it easier to have a cohesive website -->
 </head>
 <body>
-  <center><h1>Joseph Lovell</h1>
-  <nav id="menu">
-    <label for="navi">&#9776;</label>
+  <center><h1>Joseph Lovell</h1> <!-- The main heading used on all pages will be just a name, as it is set to be a portfolio which this is a typical convention-->
+  <nav id="menu"> <!-- This is the section in which the hamburger menu is created using HTML, the id is used to in order to identify the element to be able to use CSS code to style it -->
+    <label for="navi">&#9776;</label> <!--navi was chosen as the label for this as it is easily recognised when performing CSS code later on. Also, &#9776 kis used as its sign in HTML to distinquixh a hamburger menu-->
     <input type="checkbox" id="navi"/>
-    <div id="menuitems">
+    <div id="menuitems"> <!-- menuitems is used in the CSS code to style the sections that appear once the menu is opened up-->
       <a href="Coursework.html">Home</a>
-      <a href="About.html">About Me</a>
+      <a href="About.html">About Me</a> <!-- href is used as it is an anchor for the code to link to different pages. The nav needs this in order to operate -->
       <a href="Port.html">Portfolio</a>
     </div>
   </nav>
-  <div class="row">
-    <div class="column">
+  <div class="row"> <!--This section is used to create a grid of images alongside stylistic code in order to create a better look for the home page-->
+    <div class="column">   <!-- The row division will include all of the images in the section, whereas three images are put within each column one as an aim to make the images reactive and move as the screen resolution changes-->
       <img src="images/bird.JPG" alt="bird"/>
       <img src="images/egypt.JPG" alt="Egyptian Dessert"/>
       <img src="images/fire1.JPG" alt="Fire Eater"/>
       </div>
   <div class="column">
-    <img src="images/Glass.jpg" alt="Glass Photography"/>
+    <img src="images/Glass.jpg" alt="Glass Photography"/><!-- Each image is given an alt, meaning if the user can't see the image for any particular reason, they will see text telling them what the image is supposed to be-->
     <img src="images/lion.JPG" alt="Lion"/>
     <img src="images/spark.JPG" alt="Sparklers"/>
   </div>
   <div class="column">
-    <img src="images/sun1.JPG" alt="Sun Set"/>
+    <img src="images/sun1.JPG" alt="Sun Set"/> <!-- each image requires the path to be found to the folder it is in, this is why the images/ is used as it steps up into the other folder to aquire the image-->
     <img src="images/meer.JPG" alt="Meerkat"/>
     <img src="images/protest.JPG" alt="Protestor"/>
   </div>
 </div>
 
 <footer>
-<center>
+<center>  <!-- This makes the text central rather than to the left-->
     <p>Joseph Lovell
     </p>
     <center><p>
